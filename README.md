@@ -37,3 +37,5 @@ http://epochmod.com/forum/index.php?/topic/3935-release-vehicle-service-point-re
 http://epochmod.com/forum/index.php?/topic/18327-release-custom-kill-messages/?hl=%2Bkill+%2Bmessages
 
 http://epochmod.com/forum/index.php?/topic/28493-alpha-release-single-currency-30-storage-default-hive-no-global-banking/
+
+http://epochmod.com/forum/index.php?/topic/14447-how-toupdate-snap-build-pro-w-admin-fast-build-upgrade-and-extra-rc-building-system/
