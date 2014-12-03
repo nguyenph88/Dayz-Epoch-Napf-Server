@@ -385,14 +385,22 @@ if (isServer && isNil "sm_done") then {
 		endLoadingScreen;
 	};
 	
+	//////////////////
+	// MISSSION SETUP 
+	/////////////////
 	// WAI
 	diag_log text format ["Before WAI."];
   execVM "\z\addons\dayz_server\WAI\init.sqf";
   diag_log text format ["After WAI."];
   // EMS
-  diag_log text format ["Before EMS."];
-  [] execVM "\z\addons\dayz_server\EMS\DZMSInit.sqf";
-  diag_log text format ["After EMS."];
+  //diag_log text format ["Before EMS."];
+  //[] execVM "\z\addons\dayz_server\EMS\DZMSInit.sqf";
+  //diag_log text format ["After EMS."];
+  //DZAI
+  diag_log text format ["Before DZAI."];
+  [] call compile preprocessFileLineNumbers "\z\addons\dayz_server\DZAI\init\dzai_initserver.sqf";
+  diag_log text format ["Before DZAI."];
+  
   allowConnection = true;
 	sm_done = true;
 	publicVariable "sm_done";

@@ -156,7 +156,6 @@ class DayZ_loadingScreen
 
 // Epoch Admin Tools
 #include "admintools\dialog.hpp"
-
 class RscPictureGUI
 {
     access = 0;

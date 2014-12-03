@@ -629,7 +629,7 @@ if (!isNull cursorTarget && !_inVehicle && !_isPZombie && (player distance curso
 		if (s_player_upgrade_build < 0) then {
 			// s_player_lastTarget = _cursorTarget;
 			s_player_lastTarget set [0,_cursorTarget];
-			s_player_upgrade_build = player addAction [format[localize "STR_EPOCH_ACTIONS_UPGRADE",_text], "\z\addons\dayz_code\actions\player_upgrade.sqf",_cursorTarget, -1, false, true, "",""];
+			s_player_upgrade_build = player addAction [format[localize "STR_EPOCH_ACTIONS_UPGRADE",_text], "custom\snap_pro\player_upgrade.sqf",_cursorTarget, -1, false, true, "",""];
 		};
 	} else {
 		player removeAction s_player_upgrade_build;

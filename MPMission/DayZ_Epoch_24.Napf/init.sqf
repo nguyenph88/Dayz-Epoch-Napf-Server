@@ -42,6 +42,7 @@ DynamicVehicleDamageLow = 0; // Default: 0
 DynamicVehicleDamageHigh = 100; // Default: 100
 
 DZE_BuildOnRoads = false; // Default: False
+
 DZE_MissionLootTable = true; // Customloot
 DZE_SelfTransfuse = true; // tranfusioon bb
 
@@ -101,12 +102,18 @@ if (!isDedicated) then {
 
 	// service points
 	execVM "service_point\service_point.sqf";
+
+	// DZAI CLient
+	_nul = [] execVM "DZAI_Client\dzai_initclient.sqf";
+
+	// Fast build
+	//[] execVM "custom\AdminBuild.sqf";
 	
-// Epoch Admin Tools
-if ( !((getPlayerUID player) in AdminList) && !((getPlayerUID player) in ModList)) then 
-{
-  [] execVM "admintools\antihack\antihack.sqf"; // Epoch Antihack with bypass
-};
+	// Epoch Admin Tools
+	if ( !((getPlayerUID player) in AdminList) && !((getPlayerUID player) in ModList)) then 
+	{
+	  [] execVM "admintools\antihack\antihack.sqf"; // Epoch Antihack with bypass
+	};
 
 	//Lights
 	//[false,12] execVM "\z\addons\dayz_code\compile\local_lights_init.sqf";
