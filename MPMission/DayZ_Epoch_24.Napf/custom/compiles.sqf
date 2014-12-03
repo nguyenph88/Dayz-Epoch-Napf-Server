@@ -15,4 +15,4 @@ if (!isDedicated) then {
 call compile preprocessFileLineNumbers "logistic\init.sqf";
 
 // new HUD
-/player_updateGui  = compile preprocessFileLineNumbers "dayz_code\compile\player_updateGui.sqf";
+player_updateGui  = compile preprocessFileLineNumbers "dayz_code\compile\player_updateGui.sqf";
